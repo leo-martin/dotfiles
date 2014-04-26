@@ -7,7 +7,7 @@ ZSH=$HOME/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 #
 # eastwood is a fine alternative
-ZSH_THEME="gallois"
+ZSH_THEME="eastwood"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -28,12 +28,7 @@ export PATH='~/.rbenv/shims:/usr/local/bin:/usr/local/share:/usr/local/opt:/usr/
 # Disable auto update of title name (for tmux, see http://superuser.com/a/320316)
 DISABLE_AUTO_TITLE=true
 
-# Disable zsh correction
-unsetopt correct_all
-
-# To use Homebrew's directories rather than ~/.rbenv
-export RBENV_ROOT=/usr/local/var/rbenv
-
+export PATH=$HOME/.rbenv/bin:$PATH
 # To enable shims and autocompletion add to your profile:
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
@@ -43,4 +38,6 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 # Enhance history
 bindkey '^[OA' history-substring-search-up
 bindkey '^[OB' history-substring-search-down
+
+
 
